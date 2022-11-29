@@ -1,2 +1,2 @@
-# doppelteBuchfuehrungTest
-Testing doppelteBuchfuehrung in Java for Studienprojekt
+# Doppelte Buchführung:
+Testing Doppelte Buchführung Prinzip in Java for Studienprojekt
