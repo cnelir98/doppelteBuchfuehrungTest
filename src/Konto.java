@@ -17,7 +17,7 @@ public class Konto {
 
     public void Bilanz(Konto konto) {
 
-        this.addSollHabenSum();
+        this.sollHabenSum();
 
         if(this.habenSum > this.sollSum){
             this.saldo = this.habenSum - this.sollSum;
@@ -35,7 +35,7 @@ public class Konto {
         }
     }
 
-    private void addSollHabenSum(){
+    private void sollHabenSum(){
         this.saldo = 0;
         this.sollSum = 0;
         this.habenSum = 0;
@@ -58,7 +58,7 @@ public class Konto {
     }
 
     public double getSaldo(){
-        this.addSollHabenSum();
+        this.sollHabenSum();
         if(this.habenSum > this.sollSum){
             this.saldo = this.habenSum - this.sollSum;
         } else if (this.sollSum > this.habenSum){

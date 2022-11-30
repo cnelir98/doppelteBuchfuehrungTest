@@ -1,6 +1,8 @@
 public class DoppelteBuchfuehrung {
     public static void main (String[] args)
     {
+        // Vorgang eines Geschäftsjahr
+
         // Create Bestandskonten
         // aktivkonten
         Konto Eigenkapital = new Konto("Eigenkapital","aktiv");
@@ -59,8 +61,13 @@ public class DoppelteBuchfuehrung {
 
         // Überprüfe ob Schlussbilanz 0 ist!
         System.out.println(Schlussbilanzkonto.getSaldo());
-
         System.out.println(Schlussbilanzkonto.BilanzToString());
+
+        // Neues Geschäftsjahr Starten
+
+        Konto Eroeffnungsbilanz = new Konto("newYear", "Eroeffnungsbilanz");
+        Eroeffnungsbilanz = Schlussbilanzkonto;
+        // .... ....
 
     }
 }
